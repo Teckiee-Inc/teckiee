@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function EmployeeCards() {
   const [toggle, setToggle] = useState(0);
-  const [input, setInput] = useState("");
+  //   const [input, setInput] = useState("");
   const employeeInfo = [
     {
       name: "Michael Trevino",
@@ -31,14 +31,21 @@ function EmployeeCards() {
   ];
   return (
     <div className="bg-violet-500 h-screen flex flex-col justify-between items-center">
-      {/* <div className="absolute w-full z-40 top-0 left-0"> */}
-      <div className="relative w-full h-36 min-h-44 min-h-44 object-cover ">
+      <div className="relative w-full h-44 min-h-46 min-h-46 object-cover ">
         <Image src="/bc_bgv2.png" alt="watery cave" fill priority={true} />
       </div>
-      {/* </div> */}
 
       <div className="absolute w-full z-40 top-0 left-0  mb-12">
         <div className="w-full h-44 relative ">
+          {/* <div
+            id="hexagon"
+            className=" flex w-full absolute top-12 z-50 justify-center items-center flex-col"
+          >
+            <span class="before:block before:absolute before:-inset-5 before:-skew-y-6 before:bg-pink-500 relative inline-block">
+              <span class="relative text-white">annoyed</span>
+            </span>
+          </div> */}
+
           <Image
             src="/hexagon.svg"
             alt="hexagon shape"
@@ -133,15 +140,6 @@ function EmployeeCards() {
                     </p>
                   </div>
                 </div>
-                {/* <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  value={input}
-                  onChange={e => setInput(e.target.value)}
-                  className="border border-l-fuchsia-400"
-                ></textarea> */}
               </div>
             )}
           </div>

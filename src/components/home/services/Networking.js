@@ -13,47 +13,7 @@ function Networking() {
   return (
     <div className="flex flex-col items-center pb-24">
       <section className="flex justify-evenly w-11/12">
-        <div className="w-2/5 px-6">
-          <p className="text-slate-400 py-2 font-montserrat font-medium">
-            OUR SERVICES
-          </p>
-          <h2 className="font-poppins font-bold text-4xl">
-            Revolutionizing
-            <br /> Networking Solutions
-          </h2>
-          <p className="text-slate-400 py-2 font-nunito font-light">
-            Our networking solutions are tailored to meet your needs, providing
-            top-notch performance and security to keep your business running
-            smoothly. With years of experience, our team is dedicated to
-            providing reliable and scalable solutions that you can trust. Let us
-            help you transform your business today.
-          </p>
-          {/* <p className="text-slate-400 py-2 font-nunito font-light">
-            With personalized digital solutions tailored to your unique needs,
-            we work closely with you to understand your goals, challenges, and
-            vision, ensuring top-notch service and support every step of the
-            way.
-          </p> */}
-          <ol className="flex justify-between flex-wrap py-6 w-full">
-            {list.map((item, index) => {
-              return (
-                <li
-                  className="w-1/2 py-2 text-sm flex items-center"
-                  key={index}
-                >
-                  <span className="relative h-4 w-4">
-                    <Image src="/shape.svg" alt="testing" fill />
-                  </span>
-
-                  <span className="pl-1 font-nunito font-light">{item}</span>
-                </li>
-              );
-            })}
-          </ol>
-          <button className="bg-gradient-to-r from-violet-700 to-violet-400 ... text-slate-100 w-3/4 py-2 rounded-3xl font-poppins font-bold text-2xl">
-            Get a free Quote
-          </button>
-        </div>
+        {" "}
         <div className="w-3/5 px-6">
           {/* top side */}
           <div className="flex justify-evenly ">
@@ -122,6 +82,47 @@ function Networking() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="w-2/5 px-6">
+          <p className="text-slate-400 py-2 font-montserrat font-medium">
+            OUR SERVICES
+          </p>
+          <h2 className="font-poppins font-bold text-4xl">
+            Revolutionizing
+            <br /> Networking Solutions
+          </h2>
+          <p className="text-slate-400 py-2 font-nunito font-light">
+            Our networking solutions are tailored to meet your needs, providing
+            top-notch performance and security to keep your business running
+            smoothly. With years of experience, our team is dedicated to
+            providing reliable and scalable solutions that you can trust. Let us
+            help you transform your business today.
+          </p>
+          {/* <p className="text-slate-400 py-2 font-nunito font-light">
+            With personalized digital solutions tailored to your unique needs,
+            we work closely with you to understand your goals, challenges, and
+            vision, ensuring top-notch service and support every step of the
+            way.
+          </p> */}
+          <ol className="flex justify-between flex-wrap py-6 w-full">
+            {list.map((item, index) => {
+              return (
+                <li
+                  className="w-1/2 py-2 text-sm flex items-center"
+                  key={index}
+                >
+                  <span className="relative h-4 w-4">
+                    <Image src="/shape.svg" alt="testing" fill />
+                  </span>
+
+                  <span className="pl-1 font-nunito font-light">{item}</span>
+                </li>
+              );
+            })}
+          </ol>
+          <button className="bg-gradient-to-r from-violet-700 to-violet-400 ... text-slate-100 w-3/4 py-2 rounded-3xl font-poppins font-bold text-2xl">
+            Get a free Quote
+          </button>
         </div>
       </section>
     </div>
