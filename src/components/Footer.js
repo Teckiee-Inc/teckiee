@@ -17,6 +17,7 @@ function Footer() {
       <div className="flex justify-center pt-20 ">
         <div className="w-2/5">
           <h3>Services</h3>
+
           <ul className="text-slate-400">
             {menuLinks.services.map((item, index) => {
               return (

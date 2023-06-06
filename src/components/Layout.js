@@ -5,13 +5,13 @@ import ContactUsModal from "./contactUs/ContactUsModal";
 
 function Layout({ children }) {
   const contactUsToggle = useSelector(
-    (state) => state.modal.contactUsModal.active
+    state => state.modal.contactUsModal.active
   );
   return (
     <div>
       <Navbar />
       {children}
-      {contactUsToggle ? <ContactUsModal /> : ""}
+      {contactUsToggle && <ContactUsModal />}
       <Footer />
     </div>
   );

@@ -13,6 +13,12 @@ module.exports = {
         nunito: ['"Nunito"', "sans-serif"],
         poppins: ['"Poppins"', "sans-serif"],
       },
+      borderWidth: {
+        hexTop: "60px",
+      },
+      width: {
+        hexWidth: "120px",
+      },
     },
   },
 
