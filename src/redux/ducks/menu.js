@@ -12,6 +12,50 @@ const menuData = createSlice({
         { path: "/contact_us", title: "CONTACT US", status: false },
       ],
     },
+    footerMenu: {
+      services: [
+        { path: "https", title: "Networking" },
+        { path: "https", title: "Web App & Design" },
+        { path: "https", title: "Home Automation" },
+        { path: "https", title: "Marketing & Media" },
+      ],
+      aboutUs: [
+        { path: "https", title: "How we Started" },
+        { path: "https", title: "Careers" },
+        { path: "https", title: "Blogs" },
+      ],
+      contact: [
+        { path: "https", title: "(956) 222-2222" },
+        { path: "https", title: "Connect via Email" },
+      ],
+      socialMedia: [
+        {
+          path: "https://www.facebook.com/",
+          imgURL: "./test.svg",
+          alt: "Facebook Logo",
+        },
+        {
+          path: "https://www.instagram.com/",
+          imgURL: "./test.svg",
+          alt: "Instagram Logo",
+        },
+        {
+          path: "https://www.twitter.com/",
+          imgURL: "./test.svg",
+          alt: "Twitter Logo",
+        },
+        {
+          path: "https://www.linkedin.com/",
+          imgURL: "./test.svg",
+          alt: "LinkedIn Logo",
+        },
+        {
+          path: "https://www.youtube.com/",
+          imgURL: "./test.svg",
+          alt: "Youtube Logo",
+        },
+      ],
+    },
   },
   reducers: {
     updateMenu: (state, action) => {

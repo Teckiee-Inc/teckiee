@@ -50,17 +50,18 @@ function HeroLanding() {
     },
   ];
   return (
-    <header className="pt-14">
+    <header className="pt-16">
       <div className="flex justify-between">
         <span></span>
         <span className="text-red-900"></span>
       </div>
       <div className="relative">
-        <video className="w-full h-auto " type="video/mp4" autoPlay muted loop>
+        <video className="w-full h-auto" type="video/mp4" autoPlay muted loop>
           <source src="/heroVideov3.mp4" />
         </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-900"></div>
         <div className="text-slate-100 absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ">
-          <div className="relative h-24 w-full">
+          <div className="relative h-24 w-1/2 pt-12">
             <Image
               src={"/teckieename.svg"}
               alt="Teckiee Logo"
@@ -73,7 +74,7 @@ function HeroLanding() {
             <span
               id="typed"
               style={{ whiteSpace: "pre" }}
-              className="font-montserrat font-bold text-3xl"
+              className="font-montserrat font-bold text-xl"
             />
           </div>
           <div className="relative w-full h-48">
@@ -81,14 +82,17 @@ function HeroLanding() {
           </div>
         </div>
       </div>
-      <div className="bg-zinc-50">
-        <h2 className="flex justify-center text-violet-900 py-8 font-inter font-extrabold text-5xl">
+      <div className="bg-gradient-to-b from-indigo-900 to-slate-900 ...">
+        <h2 className="flex justify-center text-slate-100 py-8 font-inter font-extrabold text-3xl text-center ">
           WE PROVIDE DIGITAL SOLUTIONS
         </h2>
-        <div className="flex justify-evenly pb-12">
+        <div className="flex flex-col justify-evenly items-center pb-12">
           {solutionsInfo.map((item, index) => {
             return (
-              <div key={index} className="w-1/3 py-4 px-24">
+              <div
+                key={index}
+                className="w-4/5 py-4 px-24 mb-4 text-slate-100 bg-gradient-to-r rounded-2xl from-indigo-400 to-indigo-950"
+              >
                 <Image
                   src={item.svgURL}
                   alt={"Logo"}
