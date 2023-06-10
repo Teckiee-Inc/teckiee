@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import { motion, useCycle } from "framer-motion";
 
-const Path = (props) => (
+const Path = props => (
   <motion.path
     strokeWidth="3"
     stroke="hsl(0, 0%, 100%)"
@@ -14,7 +14,7 @@ const Path = (props) => (
 );
 
 function Navbar() {
-  const menu = useSelector((state) => state.menu.topMenu.mainTopMenu);
+  const menu = useSelector(state => state.menu.topMenu.mainTopMenu);
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
@@ -75,7 +75,7 @@ function Navbar() {
             <Link
               key={index}
               href={item.path}
-              className={`font-inter font-normal w-full py-2 z-40 bg-slate-900 bg-opacity-95 ${
+              className={`font-inter font-normal w-full py-2 z-40 bg-transparent bg-opacity-95 ${
                 item.status ? "text-amber-300" : "text-slate-100"
               }`}
             >

@@ -1,0 +1,193 @@
+.tableContainer .column_container  .uoTable {
+display:flex!important;
+justify-content:center!important;
+
+}
+ .tableContainer .uoTable table {
+   width:90%;
+   border-left: 1px solid black;
+}
+.tableHiding,  .tableContainer .uoTable table, .tableContainer{
+    display:none;
+  
+}
+
+
+TITLE HTML 
+
+<h2 style="text-align: center; color: red;">Unofficial&nbsp;Results</h2>
+<h3 style="text-align: center;"><strong>Pharr Board of Commissioners</strong></h3>
+
+TABLE HTML
+
+&nbsp;
+<table width="100%">
+<thead>
+<tr>
+<th style="text-align: center;">&nbsp;</th>
+<th style="text-align: center;" colspan="3">MAYOR</th>
+<th style="text-align: center;" colspan="3">Commissioner PL.1</th>
+<th style="text-align: center;">Commissioner PL.5</th>
+<th style="text-align: center;">Commissioner PL.6</th>
+<th>Total Votes Cast</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-left: solid black 2px; font-weight: bold;">
+<td>Candidate</td>
+<td>Harvey</td>
+<td>Pedraza</td>
+<td>Hernandez</td>
+<td>Pacheco</td>
+<td>Rincon</td>
+<td>Guajardo</td>
+<td>Medina</td>
+<td>Flores</td>
+<td>&nbsp;</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Poll Place 1 - Pharr Natatorium</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Poll Place 2 - Jose "Pepe" Salinas</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Poll Place 3 - Pharr One Building</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Poll Place 4 - Pharr City Hall</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Poll Place 5 - Dev &amp; Research Ctr.</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">ELECTION DAY TOTALS</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px; background: #003f81; color: white;">
+<td>EARLY VOTING</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">EV - Jose "Pepe Salinas Rec. Center</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">EV - Development &amp; Research Ctr.</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Mail Ballots</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px; background: #003f81; color: white;">
+<td style="font-weight: bold;">Totals</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="border-left: solid black 2px;">
+<td style="font-weight: bold;">Percentage</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>0.00%</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>

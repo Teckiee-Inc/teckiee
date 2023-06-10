@@ -3,8 +3,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 
 function Footer() {
-  const menuLinks = useSelector((state) => state.menu.footerMenu);
-  console.log(menuLinks);
+  const menuLinks = useSelector(state => state.menu.footerMenu);
   return (
     <footer className="bg-indigo-950 text-slate-100 pt-12">
       <div className="flex flex-col items-center">
