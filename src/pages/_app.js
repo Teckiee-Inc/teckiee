@@ -27,7 +27,7 @@ function App({ Component, pageProps }) {
               },
               animateState: {
                 opacity: 1,
-                clipPath: `circle(250% at 50% 50%)`,
+                clipPath: `circle(300% at 50% 50%)`,
               },
               exitState: {
                 clipPath: "circle(0% at 50% 50%)",

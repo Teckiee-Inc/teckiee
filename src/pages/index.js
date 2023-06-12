@@ -46,8 +46,3 @@ export default function Home() {
     </>
   );
 }
-/*
-display:flex;
-justify-content:center;
-width:100%
-*/
