@@ -46,10 +46,13 @@ function Quote() {
   }, []);
   // console.log(quoteChooser());
   return (
-    <div className="flex justify-center bg-indigo-950 py-32">
-      <div className="flex flex-col items-center w-3/4">
-        <p className="w-full text-violet-400 mb-6 font-montserrat font-light text-4xl text-center">
-          {qouteData.quote}
+    <div className="flex justify-center bg-slate-100 py-32">
+      <div className="flex flex-col items-center w-4/5 bg-indigo-950 rounded-2xl p-6">
+        <div className="text-slate-100 w-20 h-20 bg-pink-500 border-yellow-300 border-2 rounded-full flex justify-center items-center">
+          {/* image goes here */}
+        </div>
+        <p className="w-full text-violet-400 my-6  font-inter text-lg text-center font-normal">
+          &quot;{qouteData.quote}&quot;
         </p>
         <div className="w-full text-slate-400 font-fira font-light text-sm text-center">
           {qouteData.author}
