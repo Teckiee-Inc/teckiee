@@ -7,6 +7,7 @@ import BusinessPartners from "@/components/home/BusinessPartners";
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { updateMenu } from "@/redux/ducks/menu";
+import Info from "@/components/home/services/Info";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function Home() {
         <HeroLanding />
         <Quote />
         <Pricing />
+        <Info />
         {/* <BusinessPartners /> */}
       </main>
     </>

@@ -1,15 +1,6 @@
 import Image from "next/image";
 
 function Networking() {
-  const list = [
-    "Reliable Uptime",
-    "Advanced Security",
-    "Scalable Infrastructure",
-    "Efficient Performance",
-    "Customized Solutions",
-    "Expert Support",
-  ];
-
   return (
     <div className="flex flex-col items-center pb-24 ">
       <section className="flex justify-evenly w-11/12">

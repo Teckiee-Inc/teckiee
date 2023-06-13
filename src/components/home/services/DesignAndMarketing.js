@@ -1,14 +1,6 @@
 import Image from "next/image";
 
 function DesignAndMarketing() {
-  const list = [
-    "Tailored Services",
-    "Skilled Team",
-    "High Standards",
-    "Competitive Pricing",
-    "Excellent Service",
-    "Growth Partner",
-  ];
   return (
     <div className="flex flex-col items-center pb-24 ">
       <section className="flex justify-evenly w-11/12">
