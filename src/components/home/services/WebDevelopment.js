@@ -5,11 +5,11 @@ function WebDevelopment() {
     <div className="flex flex-col items-center pb-24 ">
       <section className="flex justify-evenly w-11/12">
         <div className="w-full px-6">
-          <h2 className="font-poppins font-bold text-2xl">
+          <h2 className="font-poppins font-bold text-2xl text-slate-900">
             Professional Service <br />
             at Affordable Price
           </h2>
-          <p className="text-slate-400 py-2 font-nunito font-light">
+          <p className="text-slate-900 py-4 font-nunito font-light">
             Our team is committed to high-quality digital solutions at a
             competitive price. Whether you&apos;re looking to revamp your
             website, improve your online presence, or build a strong brand,

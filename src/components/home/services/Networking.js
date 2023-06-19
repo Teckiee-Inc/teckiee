@@ -5,11 +5,11 @@ function Networking() {
     <div className="flex flex-col items-center pb-24 ">
       <section className="flex justify-evenly w-11/12">
         <div className="w-full px-6">
-          <h2 className="font-poppins font-bold text-2xl">
+          <h2 className="font-poppins font-bold text-2xl text-slate-900">
             Revolutionizing
             <br /> Networking Solutions
           </h2>
-          <p className="text-slate-400 py-2 font-nunito font-light">
+          <p className="text-slate-900 py-4 font-nunito font-light">
             Our networking solutions are tailored to meet your needs, providing
             top-notch performance and security to keep your business running
             smoothly. With years of experience, our team is dedicated to

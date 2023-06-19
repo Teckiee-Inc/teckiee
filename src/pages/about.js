@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { updateMenu } from "@/redux/ducks/menu";
+import AboutInfo from "@/components/aboutUs/AboutInfo";
 
 function About() {
   const dispatch = useDispatch();
@@ -27,18 +28,16 @@ function About() {
       <Head>
         <title>Teckiee | About Us</title>
       </Head>
-      <div className="pt-14">
-        <h1 className="text-center">
-          From passion to Purpose: Turning Passion into a Leading Tech Service
-        </h1>
-        <p>
-          Michael and Eddie, the managing partners of our company, bonded over
-          their shared passion for technology during a chance encounter at a
-          local bookstore. After discussing their ideas, they realized they had
-          the potential to create something great together. With a focus on web
-          development, networking, and marketing and design, they are dedicated
-          to providing exceptional services to their clients.
-        </p>
+      <div className="pt-16">
+        <header>
+          <h1 className="text-center text-slate-100 font-inter font-bold text-3xl">
+            About Teckiee
+          </h1>
+          <p className="text-center text-slate-100">
+            We are committed to driving business Growth
+          </p>
+        </header>
+        <AboutInfo />
       </div>
     </>
   );

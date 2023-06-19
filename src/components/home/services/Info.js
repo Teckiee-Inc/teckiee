@@ -18,12 +18,13 @@ const info = [
 
 function Info() {
   return (
-    <div className="bg-black py-6">
-      <div className="">
+    <div className="bg-black py-6 bg-gradient-to-b from-black to-indigo-950">
+      <div className=" flex flex-col items-center">
         <h1 className="text-slate-100 text-center font-inter text-2xl font-bold ">
           Why Choose Teckiee?
         </h1>
-        <p className="text-slate-100 text-center text-sm">
+
+        <p className="text-slate-100 text-center text-sm w-4/5">
           unmatched expertise in networking, web development, and design. We
           deliver innovative solutions that drive your success, backed by a team
           of skilled professionals.
@@ -35,7 +36,7 @@ function Info() {
           return (
             <div
               key={index}
-              className="w-4/5 p-4 rounded-lg m-2  bg-gradient-to-br from-transparent to-gray-950 shadow-indigo-950 shadow-md"
+              className="w-4/5 p-4 rounded-lg my-4  bg-gradient-to-tl from-black to-indigo-950 shadow-indigo-950 shadow-md"
             >
               <h1 className="text-slate-100 text-center text-lg font-bold font-inter">
                 {item.title}

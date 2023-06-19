@@ -10,7 +10,7 @@ function HeroLanding() {
     { vid: "/hpNetwork.gif", text: "Networking" },
   ];
 
-  const solutionsInfo = useSelector((state) => state.hp.solutionsInfo);
+  const solutionsInfo = useSelector(state => state.hp.solutionsInfo);
   const [currentGif, cycleGifs] = useCycle(...hlGifs);
   const [textHeader, setTextHeader] = useState(currentGif.text);
   const isLoadedRef = useRef(false);
@@ -77,7 +77,7 @@ function HeroLanding() {
               fill
               src={currentGif.vid}
               priority={true}
-              onLoadingComplete={(img) => {
+              onLoadingComplete={img => {
                 loadHandler();
               }}
             />
