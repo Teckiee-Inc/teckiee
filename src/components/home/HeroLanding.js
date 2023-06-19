@@ -109,8 +109,8 @@ function HeroLanding() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-indigo-900 to-slate-900 ...">
-        <h2 className="flex justify-center text-slate-100 py-8 font-inter font-extrabold text-3xl text-center ">
+      <div className="bg-gradient-to-b from-indigo-900 to-slate-900 flex flex-col items-center">
+        <h2 className="w-5/6 flex justify-center text-slate-100 py-8 font-inter font-extrabold text-3xl text-center ">
           WE PROVIDE DIGITAL SOLUTIONS
         </h2>
         <div className="flex flex-col justify-evenly items-center pb-12">

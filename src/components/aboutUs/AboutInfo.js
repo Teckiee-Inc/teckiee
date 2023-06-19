@@ -2,23 +2,27 @@ import Image from "next/image";
 const values = [
   {
     icon: "",
-    title: "Continuous Learning",
-    valueText: "Foster a culture of ongoing growth and curiosity.",
+    title: "Tenacity",
+    valueText:
+      "Demonstrating determination, perseverance, and resilience in overcoming challenges.",
   },
   {
     icon: "",
-    title: "Customer Focus",
-    valueText: "Prioritize customer needs and deliver exceptional solutions.",
+    title: "Equality",
+    valueText:
+      "Treating everyone with fairness, respect, and equal opportunities.",
   },
   {
     icon: "",
     title: "Collaboration",
-    valueText: "Embrace teamwork, diversity, and open communication.",
+    valueText:
+      "Working together, fostering teamwork, and leveraging collective strengths.",
   },
   {
     icon: "",
-    title: "Ethical Innovation",
-    valueText: "Drive responsible and impactful technological advancements.",
+    title: "Honesty",
+    valueText:
+      "Being truthful, transparent, and maintaining high ethical standards.",
   },
 ];
 function AboutInfo() {
