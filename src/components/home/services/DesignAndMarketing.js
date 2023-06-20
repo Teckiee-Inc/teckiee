@@ -11,10 +11,11 @@ function DesignAndMarketing() {
           </h2>
           <p className="text-slate-900 py-4 font-nunito font-light">
             At Teckiee, we pride ourselves on delivering exceptional web design
-            services that exceed our clients' expectations. Our team of skilled
-            professionals is committed to creating stunning and user-friendly
-            websites tailored to your unique business needs.Trust us to bring
-            your vision to life with stunning designs that make an impact.
+            services that exceed our clients&apos; expectations. Our team of
+            skilled professionals is committed to creating stunning and
+            user-friendly websites tailored to your unique business needs.Trust
+            us to bring your vision to life with stunning designs that make an
+            impact.
           </p>
 
           <button className="bg-gradient-to-r from-violet-700 to-violet-400 text-slate-100 w-2/4 py-2 rounded-3xl font-poppins font-bold text-md">
