@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4088.52 2730.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-1" d="m0,2235.75s327.39,495.14,892.93,495.14c1193.92,0,1902.76-1337.55,3195.59-247.57V0H0v2235.75Z"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <image width="4186" height="2796" transform="scale(.98)" xlink:href="../Downloads/nicolas-houdayer-J1fuuj0fOPA-unsplash.jpg"/>
+  </g>
+</svg>
