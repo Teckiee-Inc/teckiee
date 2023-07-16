@@ -44,7 +44,10 @@ export default function Home() {
         <Pricing />
         <Info />
         {/* <BusinessPartners /> */}
-        {/* JONES IS TYPING  */}
+        {/* THIS IS THE SECOND TIME */}
+          {/* THIS IS TESTING THIS*/}
+
+           {/* NEW NEW CHANGES*/}
       </main>
     </>
   );
