@@ -46,6 +46,8 @@ export default function Home() {
         {/* <BusinessPartners /> */}
         {/* THIS IS THE SECOND TIME */}
           {/* THIS IS TESTING THIS*/}
+
+           {/* NEW NEW CHANGES*/}
       </main>
     </>
   );
