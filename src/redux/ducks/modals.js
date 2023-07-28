@@ -4,7 +4,7 @@ const modalURL = process.env.MODALURL;
 
 export const modalInfo = createAsyncThunk(
   "user/modalInfo",
-  async (modalInputData) => {
+  async modalInputData => {
     const { data } = await axios.post(`${modalURL}`, modalInputData);
     return data;
   }
@@ -22,7 +22,7 @@ const modalData = createSlice({
     },
   },
   reducers: {
-    contactModalHandler: (state) => {
+    contactModalHandler: state => {
       const toggle = !state.contactUsModal.active;
       state.contactUsModal.active = toggle;
     },
@@ -35,7 +35,7 @@ const modalData = createSlice({
     projectInputHandler: (state, action) => {
       state.contactUsModal.projectInput = action.payload;
     },
-    cleanUpHandler: (state) => {
+    cleanUpHandler: state => {
       const name = state.contactUsModal.nameInput;
       const email = state.contactUsModal.emailInput;
       const project = state.contactUsModal.projectInput;
@@ -52,15 +52,15 @@ const modalData = createSlice({
       };
     },
   },
-  extraReducers: (builder) => {
-    builder.addCase(modalInfo.pending, (state) => {
+  extraReducers: builder => {
+    builder.addCase(modalInfo.pending, state => {
       state.modalStatus = "Loading...";
     });
     builder.addCase(modalInfo.fulfilled, (state, action) => {
       state.modalStatus = "Loaded...";
       state.modalSuccessToken = action.payload;
     });
-    builder.addCase(modalInfo.rejected, (state) => {
+    builder.addCase(modalInfo.rejected, state => {
       state.modalStatus = "Failed...";
     });
   },

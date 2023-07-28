@@ -30,7 +30,7 @@ function EmployeeCards() {
     },
   ];
   return (
-    <div className="bg-violet-500 h-screen flex flex-col justify-between items-center">
+    <div className="bg-blue-950 h-screen flex flex-col justify-between items-center">
       <div className="relative w-full h-44 min-h-46 min-h-46 object-cover ">
         <Image src="/bc_bgv2.png" alt="watery cave" fill priority={true} />
       </div>

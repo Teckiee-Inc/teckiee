@@ -12,14 +12,12 @@ import {
 } from "@/redux/ducks/modals";
 function ContactUsModal() {
   const dispatch = useDispatch();
-  const nameData = useSelector((state) => state.modal.contactUsModal.nameInput);
-  const emailData = useSelector(
-    (state) => state.modal.contactUsModal.emailInput
-  );
+  const nameData = useSelector(state => state.modal.contactUsModal.nameInput);
+  const emailData = useSelector(state => state.modal.contactUsModal.emailInput);
   const projectData = useSelector(
-    (state) => state.modal.contactUsModal.projectInput
+    state => state.modal.contactUsModal.projectInput
   );
-  const modalInputData = useSelector((state) => state.contactUsModal);
+  const modalInputData = useSelector(state => state.contactUsModal);
   // console.log(nameData);
   function msgHandler() {
     dispatch(modalInfo(modalInputData));
@@ -59,21 +57,21 @@ function ContactUsModal() {
             className="font-inter font-normal text-sm w-11/12 p-2 rounded-md outline-none"
             placeholder="Your Name"
             value={nameData}
-            onChange={(e) => dispatch(nameInputHandler(e.target.value))}
+            onChange={e => dispatch(nameInputHandler(e.target.value))}
           />
           <motion.input
             whileFocus={{ scale: 1.02 }}
             className="font-inter font-normal my-2 text-sm w-11/12 p-2 rounded-md outline-none"
             placeholder="Your Email"
             value={emailData}
-            onChange={(e) => dispatch(emailInputHandler(e.target.value))}
+            onChange={e => dispatch(emailInputHandler(e.target.value))}
           />
           <motion.textarea
             whileFocus={{ scale: 1.02 }}
             className="font-inter font-normal text-sm w-11/12 p-2 rounded-md outline-none"
             placeholder="Tell Us About Your Project"
             value={projectData}
-            onChange={(e) => dispatch(projectInputHandler(e.target.value))}
+            onChange={e => dispatch(projectInputHandler(e.target.value))}
           />
           <motion.button
             whileHover={{ scale: 1.1 }}

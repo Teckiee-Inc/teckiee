@@ -1,8 +1,10 @@
 import WebServices from "@/components/ourServices/WebServices";
 import Head from "next/head";
+import Pricing from "@/components/home/Pricing";
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { updateMenu } from "@/redux/ducks/menu";
+import Services_Summary from "@/components/ourServices/Services_Summary";
 
 function OurServices() {
   const dispatch = useDispatch();
@@ -29,7 +31,9 @@ function OurServices() {
         <title>Teckiee | Our Services</title>
       </Head>
       <div className="pt-14">
+        <Services_Summary />
         <WebServices />
+        <Pricing />
       </div>
     </>
   );

@@ -60,19 +60,19 @@ function HeroLanding() {
   }, [currentGif]);
 
   return (
-    <header className="pt-16">
-      <div className="relative">
-        <div className="h-48">
+    <header className=" h-auto  md:py-[3vw]    ">
+      <div className="relative min-h-[65vw]  md:min-h-[30vw]   h-auto  py-[2vw]   md:py-[11vw] lg:py-[unset]  lg:min-h-[25vw] lg:max-h-[600px]      ">
+        <div className="h-48 min-h-full   ">
           <motion.div
             key={currentGif.vid}
-            className="w-full min-h-full relative"
+            className="w-full min-h-full   "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 2, ease: "easeInOut" }}
           >
             <Image
-              className="h-auto w-auto"
+              className="h-[100%] object-fill w-auto  "
               alt="testing"
               fill
               src={currentGif.vid}
@@ -84,9 +84,9 @@ function HeroLanding() {
           </motion.div>
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-900"></div>
+        <div className="  absolute inset-0 bg-gradient-to-b from-transparent to-indigo-900"></div>
         <div className="text-slate-100 absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ">
-          <div className="relative h-24 w-1/2 pt-12">
+          <div className="relative   md:h-24 w-2/3 pt-12 mt-[70px]">
             <Image
               src={"/teckieename.svg"}
               alt="Teckiee Logo"
@@ -95,42 +95,45 @@ function HeroLanding() {
             />
           </div>
 
-          <div className="py-6">
-            <div className="text-white font-montserrat font-bold lg:text-3xl text-center">
+          <div className="py-6  py-[3vw] ">
+            <div className="text-white  font-montserrat font-bold text-[5vw] md:text-3xl text-center">
               Let us Handle
             </div>
-            <div className="text-violet-300 font-montserrat font-bold lg:text-3xl text-center">
+            <div className="text-violet-300  font-montserrat font-bold  text-[5vw] md:text-6xl  text-center">
               {textHeader}
             </div>
           </div>
-          <div className="relative w-full h-48">
+          <div className=" relative bottom-[0px]    w-[20vw] h-[20vw] max-w-[60px] max-h-[60px]    md:bottom-[30px]   md:w-[10%] md:h-[15%]   ">
             <Image src={"/robotv2.svg"} alt="robot logo" fill priority={true} />
           </div>
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-indigo-900 to-slate-900 flex flex-col items-center">
-        <h2 className="w-5/6 flex justify-center text-slate-100 py-8 font-inter font-extrabold text-3xl text-center ">
+      <div className=" bg-gradient-to-b from-indigo-900 to-slate-900 flex flex-col items-center">
+        <h2 className="w-5/6 md:w-1/3  flex justify-center font-montserrat font-bold text-slate-100 py-8 font-inter font-extrabold text-1xl md:text-2xl text-center ">
           WE PROVIDE DIGITAL SOLUTIONS
         </h2>
-        <div className="flex flex-col justify-evenly items-center pb-12">
+
+        <div className="flex  gap-[2em] justify-evenly flex-wrap  items-center pb-12 md:flex-row  border-indigo-600 max-w-[1200px] w-full ">
           {solutionsInfo.map((item, index) => {
             return (
               <div
                 key={index}
-                className="w-4/5 py-4 px-4 mb-4 text-slate-100 bg-gradient-to-r rounded-2xl from-indigo-400 to-indigo-950"
+                className="w-4/5 h-[30em]  max-w-[300px] max-h-[400px]  py-4 px-4 mb-4 text-slate-100 flex flex-col justify-evenly bg-gradient-to-br rounded-2xl from-[rgba(255,255,255,0.2)] to-[rgba(255,255,255,0)]  md:w-1/3 border border-[rgba(255,255,255,0.4)] "
               >
                 <Image
                   src={item.svgURL}
                   alt={"Logo"}
                   width={0}
                   height={0}
-                  className="py-1 h-10 w-10"
+                  unoptimized
+                  className="w-[8em]  2xl:w-[7em] h-auto"
                 />
-                <h4 className=" py-1 font-montserrat font-normal text-lg">
+
+                <h4 className="text-[6vw] leading-[1em]  w-[70%] py-1 font-montserrat font-normal text-lg md:text-[1.7em]">
                   {item.title}
                 </h4>
-                <p className="py-1 font-fira font-light">{item.p}</p>
+                <p className="py-1  font-light">{item.p}</p>
               </div>
             );
           })}
