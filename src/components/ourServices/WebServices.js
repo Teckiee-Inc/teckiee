@@ -61,7 +61,7 @@ function WebServices() {
               <div className="w-full">
                 <div className="w-12 h-0.5 my-4 bg-purple-500"></div>
               </div>
-              <h2 className="font-poppins font-bold text-[8vw] text-[#7445C7] pt-1  md:text-[3.3vw] 2xl:text-[40px]">
+              <h2 className="font-poppins font-bold text-[8vw] text-[#B286FF] pt-1  md:text-[3.3vw] 2xl:text-[40px]">
                 {item.price}
               </h2>
               <div className="font-nunito font-normal text-sm text-white py-2">
@@ -75,7 +75,7 @@ function WebServices() {
                       className="py-1 font-nunito font-nomral text-white flex justify-start "
                     >
                       <div className="relative w-4 h-auto">
-                        <Image src="/check.svg" alt="check mark" fill />
+                        <Image src="/check1.svg" alt="check mark" fill />
                       </div>
                       <span className="pl-2 text-[3vw] md:text-[1.3vw] lg:text-[1vw] 2xl:text-[18px]">
                         {item}
