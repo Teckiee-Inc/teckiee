@@ -10,7 +10,7 @@ function HeroLanding() {
     { vid: "/hpNetwork.gif", text: "Networking" },
   ];
 
-  const solutionsInfo = useSelector((state) => state.hp.solutionsInfo);
+  const solutionsInfo = useSelector(state => state.hp.solutionsInfo);
   const [currentGif, cycleGifs] = useCycle(...hlGifs);
   const [textHeader, setTextHeader] = useState(currentGif.text);
   const isLoadedRef = useRef(false);
@@ -60,12 +60,12 @@ function HeroLanding() {
   }, [currentGif]);
 
   return (
-    <header className="md:py-[3vw]">
+    <header className="md:pt-[3vw]">
       <div className="relative min-h-[65vw]  md:min-h-[30vw]   h-auto  py-[2vw]   md:py-[11vw] lg:py-[unset]  lg:min-h-[25vw] lg:max-h-[600px]      ">
         <div className="h-48 min-h-full   ">
           <motion.div
             key={currentGif.vid}
-            className="w-full min-h-full   "
+            className="w-full min-h-full absolute"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -77,7 +77,7 @@ function HeroLanding() {
               fill
               src={currentGif.vid}
               priority={true}
-              onLoadingComplete={(img) => {
+              onLoadingComplete={img => {
                 loadHandler();
               }}
             />
@@ -95,7 +95,7 @@ function HeroLanding() {
             />
           </div>
 
-          <div className="py-6  py-[3vw] ">
+          <div className="py-[3vw]">
             <div className="text-white  font-montserrat font-bold text-[5vw] md:text-3xl text-center">
               Let us Handle
             </div>
@@ -110,7 +110,7 @@ function HeroLanding() {
       </div>
 
       <div className=" bg-gradient-to-b from-indigo-900 to-slate-900 flex flex-col items-center">
-        <h2 className="w-5/6 md:w-1/3  flex justify-center font-montserrat font-bold text-slate-100 py-8 font-inter font-extrabold text-1xl md:text-2xl text-center ">
+        <h2 className="w-5/6 md:w-1/3  flex justify-center font-montserrat font-bold text-slate-100 py-8 text-1xl md:text-2xl text-center ">
           WE PROVIDE DIGITAL SOLUTIONS
         </h2>
 
