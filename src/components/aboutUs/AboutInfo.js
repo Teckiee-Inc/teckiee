@@ -29,11 +29,37 @@ const values = [
 ];
 function AboutInfo() {
   return (
-    <div className="bg-slate-100 text-[Montserrat] ">
-      <div className="max-w-[1700px] mx-auto">
-        <section className="py-6 ">
+    <div className="bg-slate-100 text-[Montserrat]">
+      <div className="max-w-[1700px] mx-auto ">
+        <section className="flex flex-col md:flex-row items-center justify-evenly px-[10vw] py-20 w-full">
+          <div className="text-center md:text-left md:w-1/2">
+            <h2 className=" font-[Montserrat] leading-[1em] text-[7vw] md:text-[4vw] xl:text-[3em] font-semibold">
+              The Dream Team <br /> Driving Innovation
+            </h2>
+            <br />
+            <p className="font-[Montserrat] w-4/5  mx-auto md:mx-0 md:w-full  xl:w-3/4 leading-[2em] text-sm ">
+              The team of passionate individuals who drive our success. With a
+              shared commitment to excellence, we embrace diversity and foster
+              an inclusive environment. Our team members bring diverse
+              backgrounds, skills, and experiences, united by their dedication
+              to delivering outstanding results.
+            </p>
+          </div>
+          {/* image */}
+          <div className=" border w-full h-[50vw] md:h-[30vw] xl:h-[25vw] xl:w-[28vw]  md:w-1/2 md:h-100% shadow  relative  rounded-3xl ">
+            <Image
+              src={"/mission_woman.jpg"}
+              alt="Teckiee Logo"
+              fill
+              unoptimized
+              priority={true}
+              className="rounded-3xl object-fill"
+            />
+          </div>
+        </section>
+        <section className="">
           <div
-            className="py-10 md:py-20 xl:py-[10vw] text-white"
+            className="pb-10 md:py-20 xl:py-[10vw] text-white"
             style={{
               backgroundImage: "url(/Mission.jpg)",
               backgroundPosition: "center",
@@ -53,33 +79,6 @@ function AboutInfo() {
                 receive unmatched value for their investment.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section className="flex flex-col md:flex-row items-center px-[10vw] py-20">
-          <div className="text-center md:text-left md:w-1/2">
-            <h2 className=" font-[Montserrat] leading-[1em] font-bold text-[7vw] md:text-[4vw] xl:text-[3em] font-semibold">
-              The Dream Team <br /> Driving Innovation
-            </h2>
-            <br />
-            <p className="font-[Montserrat] w-4/5  mx-auto md:mx-0 md:w-full  xl:w-3/4 leading-[2em] text-sm ">
-              The team of passionate individuals who drive our success. With a
-              shared commitment to excellence, we embrace diversity and foster
-              an inclusive environment. Our team members bring diverse
-              backgrounds, skills, and experiences, united by their dedication
-              to delivering outstanding results.
-            </p>
-          </div>
-          {/* image */}
-          <div className=" border w-full h-[50vw] md:h-[30vw] xl:h-[25vw] md:w-1/2 md:h-100% shadow  relative  rounded-3xl ">
-            <Image
-              src={"/mission_woman.jpg"}
-              alt="Teckiee Logo"
-              fill
-              unoptimized
-              priority={true}
-              className="rounded-lg   object-cover "
-            />
           </div>
         </section>
 

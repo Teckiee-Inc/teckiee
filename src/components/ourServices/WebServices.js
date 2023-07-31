@@ -7,7 +7,7 @@ function WebServices() {
   const pricing = [
     {
       title: "Equinox Plan",
-      price: "$1,999",
+      price: "$2,499",
       listOfItems: [
         "Up to 3 pages",
         "Basic design and layout customization",
@@ -19,7 +19,7 @@ function WebServices() {
     },
     {
       title: "Nimbus Plan",
-      price: "$4,499",
+      price: "$4,999",
       listOfItems: [
         "Up to 7 pages",
         "Customized design and layout",
@@ -31,7 +31,7 @@ function WebServices() {
     },
     {
       title: "Odyssey Plan",
-      price: "$7,999",
+      price: "$9,999",
       listOfItems: [
         "Up to 15 pages",
         "Advanced website functionality",

@@ -1360,6 +1360,10 @@ video {
   padding-bottom: 3vw;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1990,6 +1994,14 @@ video {
 
   .xl\:w-3\/4 {
     width: 75%;
+  }
+
+  .xl\:w-\[25vw\] {
+    width: 25vw;
+  }
+
+  .xl\:w-\[28vw\] {
+    width: 28vw;
   }
 
   .xl\:py-\[10vw\] {

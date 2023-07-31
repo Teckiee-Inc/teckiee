@@ -32,14 +32,14 @@ function About() {
         <header
           className="h-[40vw]"
           style={{
-            backgroundImage: "url(/Landing_page.jpg)",
+            backgroundImage: "url(/aboutTeckiee.gif)",
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
         >
           <div className="flex items-center flex-col justify-center h-full">
             <h1 className="text-center text-slate-100 font-[Montserrat]  leading-[1em] font-bold text-[10vw] xl:text-[8em]">
-              About <br /> Teckiee
+              About Teckiee
             </h1>
             <p className="w-[50%] text-[0.7em] md:text-[3vw] xl:text-[1.4em] text-center font-[Montserrat]  text-slate-100">
               <br />

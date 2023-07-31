@@ -10,7 +10,7 @@ function HeroLanding() {
     { vid: "/hpNetwork.gif", text: "Networking" },
   ];
 
-  const solutionsInfo = useSelector(state => state.hp.solutionsInfo);
+  const solutionsInfo = useSelector((state) => state.hp.solutionsInfo);
   const [currentGif, cycleGifs] = useCycle(...hlGifs);
   const [textHeader, setTextHeader] = useState(currentGif.text);
   const isLoadedRef = useRef(false);
@@ -60,7 +60,7 @@ function HeroLanding() {
   }, [currentGif]);
 
   return (
-    <header className=" h-auto  md:py-[3vw]    ">
+    <header className="md:py-[3vw]">
       <div className="relative min-h-[65vw]  md:min-h-[30vw]   h-auto  py-[2vw]   md:py-[11vw] lg:py-[unset]  lg:min-h-[25vw] lg:max-h-[600px]      ">
         <div className="h-48 min-h-full   ">
           <motion.div
@@ -77,7 +77,7 @@ function HeroLanding() {
               fill
               src={currentGif.vid}
               priority={true}
-              onLoadingComplete={img => {
+              onLoadingComplete={(img) => {
                 loadHandler();
               }}
             />

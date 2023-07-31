@@ -7,40 +7,50 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+
+  // Get the screen width
+  const screenWidth = typeof window !== "undefined" ? window.innerWidth : 640; // Set a default width for server-side rendering
+
   return (
     <Provider store={store}>
-      <div className="bg-indigo-950">
-        <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
+        <div className="bg-indigo-950">
           <motion.div
             key={router.route}
             initial="initialState"
             animate="animateState"
             exit="exitState"
             transition={{
-              duration: 1.09,
-              // delay: 0.5,
+              duration:
+                screenWidth <= 640
+                  ? 0.7
+                  : screenWidth > 641 && screenWidth <= 1000
+                  ? 0.5
+                  : 0.4, // Set different durations based on the screen size
             }}
             variants={{
               initialState: {
                 opacity: 0,
-                clipPath: "circle(0% at 50% 50%)",
+                clipPath: "inset(0% 100% 0% 0%)",
               },
               animateState: {
                 opacity: 1,
-                clipPath: `circle(1000% at 50% 50%)`,
+                clipPath: "inset(0% 0% 0% 0%)",
               },
               exitState: {
-                clipPath: "circle(0% at 50% 50%)",
+                clipPath: "inset(0% 0% 0% 100%)",
               },
             }}
-            className="w-full h-screen bg-black"
+            className="w-full bg-black"
           >
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
+            <div className="bg-indigo-950">
+              <Layout>
+                <Component {...pageProps} />
+              </Layout>
+            </div>
           </motion.div>
-        </AnimatePresence>
-      </div>
+        </div>
+      </AnimatePresence>
     </Provider>
   );
 }
