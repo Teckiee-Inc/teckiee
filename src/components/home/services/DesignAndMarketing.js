@@ -17,7 +17,7 @@ function DesignAndMarketing() {
 
         <div className="w-full px-6 text-center md:text-left  md:w-1/2">
           <h2 className=" font-bold  text-2xl md:text-[3vw] leading-[1em]  2xl:text-[50px] text-slate-900">
-            Captivating Designe <br />
+            Captivating Designs <br />
             That Exceed Expectations
           </h2>
           <p className="text-slate-900 py-4 font-nunito font-light md:text-[1vw] md:w-[40%]">
