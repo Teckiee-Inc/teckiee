@@ -12,10 +12,10 @@ function About() {
       dispatch(
         updateMenu([
           { path: "/", title: "HOME", status: false },
-          { path: "/portfolio", title: "PORTFOLIO", status: false },
+          // { path: "/portfolio", title: "PORTFOLIO", status: false },
           { path: "/our_services", title: "OUR SERVICES", status: false },
           { path: "/about", title: "ABOUT US", status: true },
-          { path: "/contact_us", title: "CONTACT US", status: false },
+          // { path: "/contact_us", title: "CONTACT US", status: false },
         ])
       );
     }

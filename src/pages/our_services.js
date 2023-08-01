@@ -14,10 +14,10 @@ function OurServices() {
       dispatch(
         updateMenu([
           { path: "/", title: "HOME", status: false },
-          { path: "/portfolio", title: "PORTFOLIO", status: false },
+          // { path: "/portfolio", title: "PORTFOLIO", status: false },
           { path: "/our_services", title: "OUR SERVICES", status: true },
           { path: "/about", title: "ABOUT US", status: false },
-          { path: "/contact_us", title: "CONTACT US", status: false },
+          // { path: "/contact_us", title: "CONTACT US", status: false },
         ])
       );
     }

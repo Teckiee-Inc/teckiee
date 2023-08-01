@@ -61,8 +61,8 @@ function HeroLanding() {
 
   return (
     <header className="md:pt-[3vw]">
-      <div className="relative min-h-[65vw]  md:min-h-[30vw]   h-auto  py-[2vw]   md:py-[11vw] lg:py-[unset]  lg:min-h-[25vw] lg:max-h-[600px]      ">
-        <div className="h-48 min-h-full   ">
+      <div className="relative min-h-[65vw] md:min-h-[30vw] h-auto md:py-[11vw] lg:py-[unset] lg:min-h-[25vw] lg:max-h-[600px]">
+        <div className="h-48 max-h-min">
           <motion.div
             key={currentGif.vid}
             className="w-full min-h-full absolute"

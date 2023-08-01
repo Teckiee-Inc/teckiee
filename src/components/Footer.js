@@ -68,10 +68,10 @@ function Footer() {
         {/* SOCIAL MEDIA */}
         <div className="flex flex-col items-center">
           <h3 className="w-4/5">Social</h3>
-          <ul className="flex w-4/5">
+          <ul className="flex items-center w-4/5 ">
             {menuLinks.socialMedia.map((item, index) => {
               return (
-                <li key={index} className="">
+                <li key={index} className="px-1 lg:pr-2 lg:pl-0">
                   <Link href={item.path}>
                     <Image
                       src={item.imgURL}
