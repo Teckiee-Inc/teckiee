@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function WebDevelopment() {
   return (
@@ -27,10 +28,15 @@ function WebDevelopment() {
             we&apos;re here to provide you with the professional services you
             need to succeed online.
           </p>
-
-          <button className="bg-gradient-to-r from-violet-700 to-violet-400 text-slate-100 w-2/4 py-2 rounded-3xl font-poppins font-bold text-md">
-            Get Quote
-          </button>
+          <Link
+            href="mailto:info@teckiee.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-gradient-to-r from-violet-700 to-violet-400 text-slate-100 w-2/4 py-2 rounded-3xl font-poppins font-bold text-md">
+              Get Quote
+            </button>
+          </Link>
         </div>
       </section>
     </div>

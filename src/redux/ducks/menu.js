@@ -14,41 +14,46 @@ const menuData = createSlice({
     },
     footerMenu: {
       services: [
-        { path: "https", title: "Networking" },
-        { path: "https", title: "Web App & Design" },
+        { path: "/our_services", title: "Networking" },
+        { path: "/our_services", title: "Web App & Design" },
         // { path: "https", title: "Home Automation" },
         // { path: "https", title: "Marketing & Media" },
       ],
       aboutUs: [
-        { path: "https", title: "How we Started" },
+        { path: "/about", title: "How we Started" },
         // { path: "https", title: "Careers" },
         // { path: "https", title: "Blogs" },
       ],
       contact: [
-        { path: "https", title: "(956) 600-2538" },
-        { path: "https", title: "info@teckiee.com" },
+        { path: "tel:9566002538", title: "(956) 600-2538" },
+        { path: "mailto:info@teckiee.com", title: "info@teckiee.com" },
       ],
       socialMedia: [
         {
-          path: "https://www.facebook.com/",
+          path: "https://www.facebook.com/teckiees/",
           imgURL: "./fbMsgLight.svg",
           alt: "Facebook Logo",
         },
         {
-          path: "https://www.instagram.com/",
+          path: "https://www.instagram.com/_teckiee/",
           imgURL: "./instagramLogo.svg",
           alt: "Instagram Logo",
         },
         {
-          path: "https://www.twitter.com/",
-          imgURL: "./twitterLogo.svg",
-          alt: "Twitter Logo",
+          path: "https://www.tiktok.com/@_teckiee",
+          imgURL: "./tiktok2.svg",
+          alt: "TikTok Logo",
         },
-        {
-          path: "https://www.linkedin.com/",
-          imgURL: "./linkedinLogo.svg",
-          alt: "LinkedIn Logo",
-        },
+        // {
+        //   path: "https://www.twitter.com/",
+        //   imgURL: "./twitterLogo.svg",
+        //   alt: "Twitter Logo",
+        // },
+        // {
+        //   path: "https://www.linkedin.com/",
+        //   imgURL: "./linkedinLogo.svg",
+        //   alt: "LinkedIn Logo",
+        // },
         // {
         //   path: "https://www.youtube.com/",
         //   imgURL: "./test.svg",

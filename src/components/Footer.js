@@ -14,9 +14,15 @@ function Footer() {
           Let&apos;s Talk
         </p>
         <br />
-        <button className="bg-purple-700 rounded-3xl py-2 px-8 text-slate-100 font-inter font-semibold text-xs mt-4">
-          Tell Us Everything
-        </button>
+        <Link
+          href="mailto:info@teckiee.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-purple-700 rounded-3xl py-2 px-8 text-slate-100 font-inter font-semibold text-xs mt-4">
+            Tell Us Everything
+          </button>
+        </Link>
       </div>
       <div className="text-center md:text-left flex flex-col  md:justify-evenly md:flex-row items-center md:items-start gap-[4vw] py-10 pt-5 md:pt-20  md:mx-auto md:w-[70%]">
         <div className="hidden md:flex   ">
@@ -72,7 +78,11 @@ function Footer() {
             {menuLinks.socialMedia.map((item, index) => {
               return (
                 <li key={index} className="px-1 lg:pr-2 lg:pl-0">
-                  <Link href={item.path}>
+                  <Link
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image
                       src={item.imgURL}
                       alt={item.alt}

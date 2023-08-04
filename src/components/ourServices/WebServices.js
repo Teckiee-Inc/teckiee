@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useDispatch } from "react-redux";
+import Link from "next/link";
 import { contactModalHandler } from "@/redux/ducks/modals";
 function WebServices() {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ function WebServices() {
         "Mobile responsive design",
         "Basic on-page SEO optimization",
       ],
-      btnURL: "#.",
+      btnURL: "mailto:info@teckiee.com",
     },
     {
       title: "Nimbus Plan",
@@ -27,7 +28,7 @@ function WebServices() {
         "Google Analytics setup and tracking",
         "Advanced on-page SEO optimization",
       ],
-      btnURL: "#.",
+      btnURL: "mailto:info@teckiee.com",
     },
     {
       title: "Odyssey Plan",
@@ -39,7 +40,7 @@ function WebServices() {
         "Professional content creation",
         "Comprehensive SEO plan & execution",
       ],
-      btnURL: "#.",
+      btnURL: "mailto:info@teckiee.com",
     },
   ];
   return (
@@ -86,12 +87,18 @@ function WebServices() {
               </ol>
               <br />
               <div className="w-full flex justify-center ">
-                <button
-                  onClick={() => dispatch(contactModalHandler())}
-                  className="bg-gradient-to-tr from-indigo-600 to-purple-500 ... py-2 px-6 round rounded-3xl text-slate-100 text-[2.5vw] md:text-[1.1vw] lg:text-[0.9vw] 2xl:text-[15px]"
+                <Link
+                  href="mailto:info@teckiee.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Getting Started
-                </button>
+                  <button
+                    // onClick={() => dispatch(contactModalHandler())}
+                    className="bg-gradient-to-tr from-indigo-600 to-purple-500 ... py-2 px-6 round rounded-3xl text-slate-100 text-[2.5vw] md:text-[1.1vw] lg:text-[0.9vw] 2xl:text-[15px]"
+                  >
+                    Getting Started
+                  </button>
+                </Link>
               </div>
             </div>
           );

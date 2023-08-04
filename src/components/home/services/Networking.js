@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 function Networking() {
   return (
     <div className="flex flex-col items-center pb-24 ">
@@ -29,9 +29,15 @@ function Networking() {
             help you transform your business today.
           </p>
 
-          <button className="bg-gradient-to-r from-violet-700 to-violet-400 text-slate-100 w-2/4 py-2 rounded-3xl font-poppins font-bold text-md">
-            Get Quote
-          </button>
+          <Link
+            href="mailto:info@teckiee.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-gradient-to-r from-violet-700 to-violet-400 text-slate-100 w-2/4 py-2 rounded-3xl font-poppins font-bold text-md">
+              Get Quote
+            </button>
+          </Link>
         </div>
       </section>
     </div>
