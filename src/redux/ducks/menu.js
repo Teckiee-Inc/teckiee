@@ -31,32 +31,32 @@ const menuData = createSlice({
       socialMedia: [
         {
           path: "https://www.facebook.com/teckiees/",
-          imgURL: "./fbMsgLight.svg",
+          imgURL: "./socialMediaIcons/fbMsgLight.svg",
           alt: "Facebook Logo",
         },
         {
           path: "https://www.instagram.com/_teckiee/",
-          imgURL: "./instagramLogo.svg",
+          imgURL: "./socialMediaIcons/instagramLogo.svg",
           alt: "Instagram Logo",
         },
         {
           path: "https://www.tiktok.com/@_teckiee",
-          imgURL: "./tiktok2.svg",
+          imgURL: "./socialMediaIcons/tiktok2.svg",
           alt: "TikTok Logo",
         },
         // {
         //   path: "https://www.twitter.com/",
-        //   imgURL: "./twitterLogo.svg",
+        //   imgURL: "./socialMedia/twitterLogo.svg",
         //   alt: "Twitter Logo",
         // },
         // {
         //   path: "https://www.linkedin.com/",
-        //   imgURL: "./linkedinLogo.svg",
+        //   imgURL: "./socialMedia/linkedinLogo.svg",
         //   alt: "LinkedIn Logo",
         // },
         // {
         //   path: "https://www.youtube.com/",
-        //   imgURL: "./test.svg",
+        //   imgURL: "./socialMedia/test.svg",
         //   alt: "Youtube Logo",
         // },
       ],

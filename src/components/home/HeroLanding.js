@@ -5,9 +5,9 @@ import { useSelector } from "react-redux";
 
 function HeroLanding() {
   const hlGifs = [
-    { vid: "/hpWebDev.gif", text: "Web Development" },
-    { vid: "/hpMarket.gif", text: "Marketing" },
-    { vid: "/hpNetwork.gif", text: "Networking" },
+    { vid: "/homePage/hpWebDev.gif", text: "Web Development" },
+    { vid: "/homePage/hpMarket.gif", text: "Marketing" },
+    { vid: "/homePage/hpNetwork.gif", text: "Networking" },
   ];
 
   const solutionsInfo = useSelector(state => state.hp.solutionsInfo);
@@ -88,7 +88,7 @@ function HeroLanding() {
         <div className="text-slate-100 absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center ">
           <div className="relative   md:h-24 w-2/3 pt-12 mt-[70px]">
             <Image
-              src={"/teckieename.svg"}
+              src={"/homePage/teckieename.svg"}
               alt="Teckiee Logo"
               fill
               priority={true}
@@ -104,7 +104,12 @@ function HeroLanding() {
             </div>
           </div>
           <div className=" relative bottom-[0px]    w-[20vw] h-[20vw] max-w-[60px] max-h-[60px]    md:bottom-[30px]   md:w-[10%] md:h-[15%]   ">
-            <Image src={"/robotv2.svg"} alt="robot logo" fill priority={true} />
+            <Image
+              src={"/homePage/robotv2.svg"}
+              alt="robot logo"
+              fill
+              priority={true}
+            />
           </div>
         </div>
       </div>

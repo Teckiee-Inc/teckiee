@@ -6,25 +6,25 @@ const values = [
     title: "Tenacity",
     valueText:
       "Demonstrating determination, perseverance, and resilience in overcoming challenges.",
-    icon: "/tenacity.png",
+    icon: "/coreValues/tenacity.png",
   },
   {
     title: "Equality",
     valueText:
       "Treating everyone with fairness, respect, and equal opportunities.",
-    icon: "/tenacity.png",
+    icon: "/coreValues/tenacity.png",
   },
   {
     title: "Collaboration",
     valueText:
       "Working together, fostering teamwork, and leveraging collective strengths.",
-    icon: "/tenacity.png",
+    icon: "/coreValues/tenacity.png",
   },
   {
     title: "Honesty",
     valueText:
       "Being truthful, transparent, and maintaining high ethical standards.",
-    icon: "/tenacity.png",
+    icon: "/coreValues/tenacity.png",
   },
 ];
 function AboutInfo() {
@@ -48,7 +48,7 @@ function AboutInfo() {
           {/* image */}
           <div className=" border w-full h-[50vw] md:h-[30vw] xl:h-[25vw] xl:w-[28vw]  md:w-1/2 md:h-100% shadow  relative  rounded-3xl ">
             <Image
-              src={"/mission_woman.jpg"}
+              src={"/aboutInfo/mission_woman.jpg"}
               alt="Teckiee Logo"
               fill
               unoptimized

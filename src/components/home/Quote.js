@@ -29,7 +29,7 @@ function Quote() {
             <div className=" relative  text-slate-100 w-20 h-20 bg-[#0C0C50] border-yellow-300 border-2 overflow-hidden rounded-full flex justify-center items-center">
               {/* image goes here */}
               <Image
-                src={"/guy_quote.jpg"}
+                src={quoteData.img}
                 alt="Teckiee Logo"
                 fill
                 priority={true}
