@@ -41,6 +41,7 @@ export default function Home() {
       <main className="w-full font-montserrat">
         <HeroLanding />
         <Quote />
+        {/* testing */}
         <Pricing />
         <Info />
         {/* <BusinessPartners /> */}
