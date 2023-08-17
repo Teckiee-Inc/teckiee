@@ -6,7 +6,7 @@ function Networking() {
       <section className="flex flex-col md:flex-row justify-evenly w-11/12 min-h-[300px] md:h-[50vw] md:max-h-[700px] py-10  md:py-20">
         <div className=" w-full h-[50vw] md:h-[40vw] xl:h-[30vw] md:w-1/2 md:h-100%   relative bg-transparent rounded-3xl ">
           <Image
-            src={"/homePage/networking_img.jpg"}
+            src={"/networking/networking_img.jpg"}
             alt="Teckiee Logo"
             fill
             unoptimized

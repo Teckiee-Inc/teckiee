@@ -10,7 +10,7 @@ function HeroLanding() {
     { vid: "/homePage/hpNetwork.gif", text: "Networking" },
   ];
 
-  const solutionsInfo = useSelector(state => state.hp.solutionsInfo);
+  const solutionsInfo = useSelector((state) => state.hp.solutionsInfo);
   const [currentGif, cycleGifs] = useCycle(...hlGifs);
   const [textHeader, setTextHeader] = useState(currentGif.text);
   const isLoadedRef = useRef(false);
@@ -77,7 +77,7 @@ function HeroLanding() {
               fill
               src={currentGif.vid}
               priority={true}
-              onLoadingComplete={img => {
+              onLoadingComplete={(img) => {
                 loadHandler();
               }}
             />
@@ -115,8 +115,8 @@ function HeroLanding() {
       </div>
 
       <div className=" bg-gradient-to-b from-indigo-900 to-slate-900 flex flex-col items-center">
-        <h2 className="w-5/6 md:w-1/3  flex justify-center font-montserrat font-bold text-slate-100 py-8 text-1xl md:text-2xl text-center ">
-          WE PROVIDE DIGITAL SOLUTIONS
+        <h2 className="w-5/6 md:w-1/3  text-[5vw] font-montserrat font-normal flex justify-center md:font-thin  text-slate-100 py-8 text-1xl md:text-[4vw]  lg:text-[2.5vw] md:w-[60%] text-center ">
+          WE PROVIDE <br /> DIGITAL SOLUTIONS
         </h2>
 
         <div className="flex  gap-[2em] justify-evenly flex-wrap  items-center pb-12 md:flex-row  border-indigo-600 max-w-[1200px] w-full ">
