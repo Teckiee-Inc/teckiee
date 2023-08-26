@@ -31,7 +31,7 @@ function AboutInfo() {
   return (
     <div className="bg-slate-100 text-[Montserrat]">
       <div className="max-w-[1700px] mx-auto ">
-        <section className="flex flex-col md:flex-row items-center justify-evenly px-[10vw] py-20 w-full">
+        <section className="flex flex-col-reverse md:flex-row items-center justify-evenly px-[10vw] py-20 w-full">
           <div className="text-center md:text-left md:w-1/2">
             <h2 className=" font-[Montserrat] leading-[1em] text-[7vw] md:text-[4vw] xl:text-[3em] font-semibold">
               The Dream Team <br /> Driving Innovation
@@ -46,14 +46,14 @@ function AboutInfo() {
             </p>
           </div>
           {/* image */}
-          <div className=" border w-full h-[50vw] md:h-[30vw] xl:h-[25vw] xl:w-[28vw]  md:w-1/2 md:h-100% shadow  relative  rounded-3xl ">
+          <div className="  w-full h-[45vw] md:h-[30vw] xl:h-[25vw] xl:w-[28vw]  md:w-1/2 md:h-100%   relative  rounded-3xl ">
             <Image
-              src={"/aboutInfo/mission_woman.jpg"}
+              src={"/aboutInfo/ab2.svg"}
               alt="Teckiee Logo"
               fill
               unoptimized
               priority={true}
-              className="rounded-3xl object-fill"
+              className="rounded-3xl object-cover"
             />
           </div>
         </section>
