@@ -115,9 +115,14 @@ function HeroLanding() {
       </div>
 
       <div className=" bg-gradient-to-b from-indigo-900 to-slate-900 flex flex-col items-center">
-        <h2 className="w-5/6 md:w-1/3  text-[5vw] font-montserrat font-normal flex justify-center md:font-thin  text-slate-100 py-8 text-1xl md:text-[4vw]  lg:text-[2.5vw] md:w-[60%] text-center ">
-          WE PROVIDE <br /> DIGITAL SOLUTIONS
+        <h2 className="w-5/6 md:w-1/3   text-[5vw] font-montserrat flex justify-center font-thin  text-slate-100 md:py-1 text-1xl md:text-[3.5vw]  lg:text-[2.2vw] md:w-[60%] text-center ">
+          We Provide
         </h2>
+        <h2 className="w-full md:w-1/3  text-[10vw] font-montserrat flex justify-center  md:font-thin  leading-[1em]  text-slate-100 md:py-4 text-1xl md:text-[6vw]  lg:text-[4.5vw] md:w-[60%] text-center ">
+          Digital Solutions
+        </h2>
+        <br />
+        <br />
 
         <div className="flex  gap-[2em] justify-evenly flex-wrap  items-center pb-12 md:flex-row  border-indigo-600 max-w-[1200px] w-full ">
           {solutionsInfo.map((item, index) => {
