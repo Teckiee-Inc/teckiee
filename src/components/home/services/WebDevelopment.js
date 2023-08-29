@@ -8,7 +8,7 @@ function WebDevelopment() {
         <div className=" w-[80vw] mx-auto h-[80vw] md:h-[40vw] xl:h-[30vw] md:w-1/2 md:h-100%   relative bg-transparent rounded-3xl ">
           <Image
             src={"/WebDevelopment/desktopWeb.png"}
-            alt="Teckiee Logo"
+            alt="/desktopWeb.png"
             fill
             unoptimized
             priority={true}
